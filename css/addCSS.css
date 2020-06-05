@@ -1,0 +1,32 @@
+.py-5_h1_id1{
+    margin-top: 30px;
+    text-align: center;
+    width: 1000px;
+    margin-left:auto;
+    margin-right: auto;
+    text-shadow: 3px 1px 3px rgba(45, 45, 45, 0.14);
+}
+.sec-h3{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    width: 1000px;
+    margin-left:auto;
+    margin-right: auto;
+   color: #333;
+}
+.in-comments{
+    margin-left: 100px;
+    width: 1000px;
+    height: 200px;
+}
+.in-comments-i{
+
+    float: left;
+    padding-top: 50px;
+   width: 800px;
+   height: 200px;
+}
+.px-lg-5 sub-wthree{
+    text-align: left;
+}
