@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Week4</title>
+    <!-- Meta tag Keywords -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="" />
+    <script>
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+
+    </script>
+    <style>
+        .h2_st{
+            margin-top:30px ;
+            margin-bottom: 30px;
+        }
+    </style>
+    <!-- //Meta tag Keywords -->
+    <!-- Custom-Files -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!-- Bootstrap-Core-CSS -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/slider.css" type="text/css" media="all" />
+    <!-- Style-CSS -->
+    <!-- font-awesome-icons -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <!-- //font-awesome-icons -->
+    <!-- /Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900" rel="stylesheet">
+    <!-- //Fonts -->
+</head>
+
+<body>
+    <!-- mian-content -->
+    <div class="page-sidebar" style="position: fixed; margin-top: 560px; margin-left: 20px; width: 180px; ">
+        <ul class="list-unstyled" style="color: #666;">
+            
+            <li style="font-size: large; border-bottom: solid; margin-bottom: 10px;"><b>quick reference</b></li>
+            <li><a href="#day1">GUI in Java</a></li>
+            <li><a href="#day2">Exception Handling</a></li>
+            <li><a href="#day3">Collections</a></li>
+            <li><a href="#day4">File I/O</a></li>
+            <li><a href="#day5">Code Conventions</a></li>
+            
+           
+        </ul>
+    </div>
+    <div class="main-w3layouts-header-sec inner-page" id="home">
+        <div class="overlay-innerpage">
+            <!-- header -->
+            <header>
+                <div class="container">
+                    <div class="header d-lg-flex justify-content-between align-items-center">
+                        <div class="header-section">
+                            <h1>
+                                <a class="navbar-brand logo editContent" href="index.html">
+                                    <span class="fa fa-angellist"></span> Java Nestling
+                                </a>
+                            </h1>
+                        </div>
+                        <div class="nav_section">
+                            <nav>
+                                <label for="drop" class="toggle mt-lg-0 mt-1"><span class="fa fa-bars" aria-hidden="true"></span></label>
+                                <input type="checkbox" id="drop" />
+                                <ul class="menu">
+                                    <li class="active"><a href="index.html">Home</a></li>
+                                    
+    
+                                    <li>
+                                        <!-- First Tier Drop Down -->
+                                        <label for="drop-2" class="toggle">Dropdown <span class="fa fa-angle-down" aria-hidden="true"></span> </label>
+                                        <a href="#skills">course <span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                                        <input type="checkbox" id="drop-2" />
+                                        <ul class="inner-dropdown">
+                                            <li><a href="week1.html">week1</a></li>
+                                            <li><a href="week2.html">week2</a></li>
+                                            <li><a href="week3.html">week3</a></li>
+                                            <li><a href="week4.html">week4</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="quiz.html">Quiz</a></li>
+                                    
+                                    <li><a href="contact.html">Contact Us</a></li>
+                                   
+    
+                                </ul>
+                            </nav>
+                        </div>
+    
+                    </div>
+                </div>
+            </header>
+            <!-- //header -->
+        </div>
+    </div>
+    
+
+    <!-- //banner -->
+    <!-- //banner-botttom -->
+    <section class="content-info py-5">
+        <div class="container py-md-5">
+            <h3 class="title-w3pvt mb-5 text-center">Java Week4</h3>
+            <h3 class="title-w3pvt mb-5 text-center">A history of Java, Basic Java Skills</h3>
+            <p class="text-center">Courses are going to bid you a farewell！</p>
+            <div class="single-lavi-page mt-md-5 mt-4 px-lg-5">
+                <div class="content-sing-w3layouts px-lg-5">
+                    <img class="img-fluid" src="images/banner4.jpg" alt="">
+                
+                    <h2 class="h2_st"">Summary:</h2>
+                    <img src="images/w4_1.jpg " class="img-fluid">
+
+                    <h2 class="h2_st" id="day1">Day1-GUI in Java (Advanced)</h2>
+                    <h4>Event Handling (again) // Using Anonymous Inner Classes</h4>
+                    <img src="images/w4_2.jpg " class="img-fluid">
+                    <h4>1. Setting up the GUI & Determining the Event Source</h4>
+                    <img src="images/w4_3.jpg " class="img-fluid">
+                    <img src="images/w4_4.jpg " class="img-fluid">
+                    <a href="http://docs.oracle.com/javase/8/docs/api/java/awt/event/ActionEvent.html">http://docs.oracle.com/javase/8/docs/api/java/awt/event/ActionEvent.html</a>
+                    <h4>2. Using Anonymous Inner Classes </h4>
+                    <p>An anonymous class is a special kind of class: a local class without a name.</p>
+                    <p>It allows an object to be created using an expression that combines object creation with the declaration of the class.</p>
+                    <p>– This avoids naming a class but:</p>
+                    <ul>
+                        <li><p>Only one instance of the class can ever be made;</p></li>
+                        <li><p>Class can't be accessed from anywhere else in the program.</p></li>
+                        <li><p>An anonymous class is defined as part of a new expression and must be a subclass or implement an interface.</p></li>
+
+                    </ul>
+                    <p>– The class body can define methods but cannot define any constructors.</p>
+                    <h4>3. Inner Classes</h4>
+                   <ul>
+                       <li><p>Inner classes are named versions of anonymous classes.</p></li>
+                   </ul>
+                   <p>– Yes, you were told that you could only have one class per file but that isn't strictly true!</p>
+                <p>– In some cases (and this is one of them), you can have more than one class in the same file.</p>
+                <ul>
+                    <li><p>Inner (or Nested) Class: Standard class declared within the scope of a standard top-level (or enclosing) class.
+                    </p></li>
+                </ul>
+                <h2 class="h2_st" id="day2">Day 2-Exception Handling</h2>
+                <h4>Trying & Catching Exceptions</h4>
+                <ul>
+                    <li><p>Programmers declare all possible errors or unusual circumstances that may be caused by their classes: these are exceptions.</p></li>
+                    <li><p>Any code that wishes to make use of these classes must either catch these exceptions, or else explicitly declare that they are not caught.</p></li>
+                    <p>– If an exception is caught, then control is transferred to a special block of code where it is handled.</p>
+                    <li><p>Exceptions are objects, subclasses of java.lang.Exception class.</p></li>
+                    <img src="images/w4_5.jpg " class="img-fluid">
+                    <li><p>When a program is run, the JVM will attempt to execute each statement in the try block in turn.</p></li>
+                    <li><p>If any statement throws an exception, then either:</p></li>
+                    <p>– The catch block corresponding to this exception will be executed;</p>
+                    <p>OR– the method in which this code lies will itself throw the exception.</p>
+        
+                        <li><p>A try/catch section can also have a finally section, usually to tidy up afterwards (e.g. to close files).</p></li>
+            
+                </ul>
+                <h4>Syntax for try/catch/finally Blocks</h4>
+                <img src="images/w4_6.jpg " class="img-fluid">
+                <h2 class="h2_st" id="day3">Day 3-Collections & Sorting</h2>
+                <h4>Computer programs need to interact with the world:</h4>
+                <ul>
+                    <li><p>Computer programs need to interact with the world:</p></li>
+                    <ul style="margin-left: 20px;">
+                        <li><p>Bring in information from an external source;</p></li>
+                        <li><p>Send out information to an external destination.</p></li>
+                    </ul>
+                    <li><p>This interaction is what we refer to as Input/Output:</p></li>
+                    <ul style="margin-left: 20px;">
+                        <li><p>Input: to bring in information (read)</p></li>
+                        <li><p>Output: to send out information (write)</p></li>
+                    </ul>
+                    <li><p> Information for Input/Output can be:</p></li>
+                    <ul style="margin-left: 20px;">
+                        <li><p>Anywhere: memory, disk, in a file, over the network, in another program …</p></li>
+                        <li><p>Of any type (any object): Text, Image, Audio, Video …</p></li>
+                    </ul>
+
+                </ul>
+                <h4>Steps: Reading from / Writing to files</h4>
+                <ol>
+                    <li><p><i> Open file</i></p></li>
+                    <ul style="margin-left: 20px;">
+                        <li><p>– Needs the file’s name and maybe its location (path).</p></li>
+                        <li><p>– Open file by creating an instance of an appropriate stream class.</p></li>
+                    </ul>
+                    <li><p><i> Perform operations</i></p></li>
+                    <ul style="margin-left: 20px;">
+                        <li><p>– Read from and/or write to the file.</p></li>
+                        <li><p>– Call instance methods that belong to the stream object’s class.</p></li>
+                    </ul>
+                    <li><p><i> Close file</i></p></li>
+                    <ul style="margin-left: 20px;">
+                        <li><p>– Any class from <b>InputStream</b>, <b>OutputStream</b>, Reader and Writer has a close() method.</p></li>
+                        <li><p>– Call instance methods that belong to the stream object’s class.</p></li>
+                    </ul>
+                    
+                </ol>
+
+                
+                <h2 class="h2_st" id="day4">Day 4-File I/O</h2>
+                <h4>Java’s Collection Classes</h4>
+                <ul>
+                    <li><p>Most programs utilise collections of data e.g.,</p></li>
+                    <ul style="margin-left: 20px;">
+                        <li><p>A set of users;</p></li>
+                        <li><p>Words in a dictionary</p></li>
+                    </ul>
+                    <li><p>Collection in Java: “an object that groups multiple elements into a single unit”.</p></li>
+                    <ul style="margin-left: 20px;">
+                        <li><p>Can be used to: store, retrieve, and manipulate data.</p></li>
+                        <li><p>Examples: a poker hand, a mail folder, a telephone directory.</p></li>
+                    </ul>
+                    <li><p> Java provides several interfaces, implementations and algorithms for handling collections of objects, via its Java Collections Framework (see java.util package).</p></li>
+                
+                </ul>
+                <img src="images/w4_7.jpg " class="img-fluid">
+                <h4>Choosing a Collection …</h4>
+                <ul>
+                    <li><p>Which collection you choose will depend on many factors e.g.</p></li>
+                    <ul style="margin-left: 20px;">
+                        <li><p>Whether the collection needs to be of fixed size or dynamic;</p></li>
+                        <li><p>Whether it has a natural order or not;</p></li>
+                        <li><p>Whether we want to insert/delete at arbitrary places, or only at the start or end;</p></li>
+                        <li><p>Whether we want to be able to search through a large amount of data very quickly;</p></li>
+                        <li><p>Whether we want random access to elements or sequential access;</p></li>
+                        <li><p>Whether we need to maintain key/value pairs.</p></li>
+                    </ul>
+                </ul>
+                <h2 class="h2_st" id="day5">Day 5-Java Code Conventions, Packaging & Delivery</h2>
+                <h4>Java Code Conventions: why?</h4>
+                <p><b>To produce programs that have good style.</b></p>
+                <ul>
+                    <li><p>Improve readability: by author, by others.</p></li>
+                    <li><p>Design for reusability: can be reused later in another programs.</p></li>
+                    <li><p>Good appearance.</p></li>
+                    <li><p>Maintenance: reduce cost.</p></li>
+                    <li><p>Clean and well packaged as a product.</p></li>
+                    <li><p><i>How to achieve this?</i></p></li>
+                    <ul style="margin-left: 20px;">
+                        <li><p>Indentation</p></li>
+                        <li><p>Naming</p></li>
+                        <li><p>Comments</p></li>
+                        <li><p>Source file organization</p></li>
+                    </ul>
+                </ul>
+                <h4>Indentation</h4>
+                <ul>
+                    <li><p>The blank space(s) between a margin and the beginning of an indented line.</p></li>
+                    <li><p>Emphasizes program structure.</p></li>
+                    <li><p>Unit: 4 spaces (or just be consistent).</p></li>
+                    <li><p> Indent every level:</p></li>
+                    <ul style="margin-left: 20px;">
+                        <li><p>When a new set of curly braces or</p></li>
+                        <li><p>(a block) occurs.</p></li>
+                        
+                    </ul>
+                </ul>
+                <h4>Naming: class, method, variable, package names</h4>
+                <ul>
+                    <li><p>To be a valid name:</p></li>
+                    <ul style="margin-left: 20px;">
+                        <li><p>Made up of letters, digits and underscore (_).</p></li>
+                        <li><p>Start with a letter.</p></li>
+                        <li><p>Cannot be Java keywords (e.g. char, transient …)</p></li>
+                       
+                    </ul>
+                    <li><p>To be a good name:</p></li>
+                    <ul style="margin-left: 20px;">
+                        <li><p>Simple.</p></li>
+                        <li><p>Meaningful.</p></li>
+                    </ul>
+                    <li><p>Class names:</p></li>
+                    <ul style="margin-left: 20px;">
+                        <li><p>Nouns</p></li>
+                        <li><p>mixed case</p></li>
+                        <li><p>capitalize 1st letter of each internal word</p></li>
+                        <li><p>use whole words</p></li>
+                    </ul>
+                    <li><p>Constant name:</p></li>
+                    <ul style="margin-left: 20px;">
+                        <li><p>All uppercase</p></li>
+                        <li><p>Words separated by underscores ("_")</p></li>
+                        <li><p>final</p></li>
+                   
+                    </ul>
+                    <li><p>Method name:</p></li>
+                    <ul style="margin-left: 20px;">
+                        <li><p>Verb</p></li>
+                        <li><p>1st letter lowercase, and 1st letter of each internal word capitalised</p></li>
+                       
+                    </ul>
+                    <li><p>Package name:</p></li>
+                    <ul style="margin-left: 20px;">
+                        <li><p>All-lowercase</p></li>
+                        <li><p>use top-level domain name </p></li>
+                       
+                    </ul>
+                </ul>
+                <h4>Comments</h4>
+                <ul>
+                    <li><p>Documentation comments:</p></li>
+                    <p><b>/** ... */</b> to describe the specification<p>
+                        <ul style="margin-left: 20px;">
+                            <li><p>All classes</p></li>
+                            <li><p>At least all service methods</p></li>
+                            <li><p>will be written in Java doc</p></li>
+                        </ul>
+                    <li><p>Implementation comments:</p></li>
+                    <p><b>/* ... */</b> or <b>// </b>to comment out code or comment about the particular implementation.</p>
+                    <li><p> Very important when generating Javadocs.</p></li>
+                    <li><p>Very important when <i>generating Javadocs.</i></p></li>
+                    <li><p>IWrite comments on top of a block of code.</p></li>
+                </ul>
+                <h4>Javadocs</h4>
+                <ul>
+                    <li><p>What is Javadoc:</p></li>
+                    <ul style="margin-left: 20px;">
+                        <li><p>A tool for generating API documentation in HTML format from documentation comments in source code.</p></li>
+                        <li><p>As seen in Java standard library.</p></li>
+                    </ul>
+                    <li><p>How to generate Javadocs:</p></li>
+                    <ul style="margin-left: 20px;">
+                        <li><p>Command line: <b>javadoc [options] [packagenames] [source files] [@files]</b></p></li>
+                        <li><p>IDE:</p></li>
+                        <ul style="margin-left: 20px;">
+                            <li><p>Eclipse: Project ->generate Javadoc</p></li>
+                        <li><p>NetBeans: Build ->generate Javadoc</p></li>
+
+                        </ul>
+                    </ul>
+                    
+                </ul>
+                
+                
+                </div>
+                <div style="height: 50px;"></div>
+
+               
+                <div class="comment-sec-w3layouts">
+                    <h4 class="leave-w3layouts mb-5">3 Comments</h4>
+                    <ul class="list-unstyled">
+                        <li class="media">
+                            <img class="mr-3 img-fluid" src="images/im3.png" style='width:100px; height: 100px;' alt="">
+
+                            <div class="media-body">
+                                <h5 class="mt-0 mb-1">G-IDLE_Yuqi Song</h5>
+                                <p class="mt-3"> Thanks for your sharing! I hope I can learn more about Java unit testing the next time the content is updated!</p>
+                            </div>
+                        </li>
+                        <li class="media my-5 ml-3">
+                            <img class="mr-3 img-fluid" src="images/im2.png" style='width:100px; height: 100px;' alt="">
+                            <div class="media-body">
+                                <h5 class="mt-0 mb-1">Jacke Masito</h5>
+                                <p class="mt-3"> mark.</p>
+                            </div>
+                        </li>
+                        <li class="media ml-5">
+                            <img class="mr-3 img-fluid" src="images/im1.png" style='width:100px; height: 100px;' alt="">
+                            <div class="media-body">
+                                <h5 class="mt-0 mb-1">Kim Seokjin</h5>
+                                <p class="mt-3">미안하지만 내용을 읽은 후에도 프로그래머조차도 저자에게 키스하기를 원합니다.
+                                    당신을 사랑합니다</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="comment-bottom lavi_mail_grid_right p-0 my-lg-5 my-4">
+                    <h4 class="leave-w3layouts mb-5">Post a Comment</h4>
+                    <form action="#" class="w3layouts-contact-fm" method="post">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label>First Name</label>
+                                    <input class="form-control" type="text" name="Name" placeholder="" required="">
+                                </div>
+                                <div class="form-group">
+                                    <label>Last Name</label>
+                                    <input class="form-control" type="text" name="Name" placeholder="" required="">
+                                </div>
+                                <div class="form-group">
+                                    <label>Email</label>
+                                    <input class="form-control" type="email" name="Email" placeholder="" required="">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label>Write Message</label>
+                                    <textarea class="form-control" name="Message" placeholder="" required=""></textarea>
+                                </div>
+
+
+
+                            </div>
+                            <div class="form-group mx-auto mt-3">
+                                <button type="submit" class="btn submit">Submit Comment</button>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- //banner-botttom -->
+
+    <!-- footer -->
+    <footer class="footer-content py-5">
+        <div class="container py-md-3">
+            <div class="footer-top text-center mb-5">
+                <h2>
+                    <a class="navbar-brand pt-3 mb-5" href="index.html">
+                        <span class="fa fa-angellist"></span>java nestling
+                    </a>
+                </h2>
+                <div class="contact-form mx-auto text-left">
+                    <form method="post" action="#">
+                        <div class="row subscribe-sec">
+                            <div class="col-md-9 con-gd">
+                                <input type="email" class="form-control" id="email" placeholder="Your Email here..." name="email" required>
+
+                            </div>
+                            <div class="col-md-3 con-gd">
+                                <button type="submit" class="btn btn-default">Subscribe</button>
+                            </div>
+
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+            <div class="row footer-top-inner-w3layouts">
+                <div class="col-lg-3 col-md-6 mt-lg-0 mt-4">
+                    <div class="footer-lavi">
+                        <h3 class="mb-3 lavi_title">Links</h3>
+                        <hr>
+                        <ul class="list-info-lavi">
+                            <li>
+                                <a href="about.html"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                                    Our Mission
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                                    Latest Posts
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                                    Explore
+                                </a>
+                            </li>
+                            <li>
+                                <a href="contact.html"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                                    Find us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                                    Privacy Policy
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-lg-0 mt-4">
+                    <div class="footer-lavi">
+                        <h3 class="mb-3 lavi_title">Navigation</h3>
+                        <hr>
+                        <ul class="list-info-lavi">
+                            <li>
+                                <a href="index.html"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="about.html"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                                    About Us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="single.html"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                                    Single Page
+                                </a>
+                            </li>
+                            <li>
+                                <a href="about.html"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                                    Team
+                                </a>
+                            </li>
+                            <li>
+                                <a href="contact.html"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                                    Contact Us
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-lg-0 mt-4">
+                    <div class="footer-lavi">
+                        <h3 class="mb-3 lavi_title">Customer Care</h3>
+                        <hr>
+                        <ul class="list-info-lavi">
+                            <li>
+                                <a href="about.html"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                                    Our Mission
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                                    Latest Posts
+                                </a>
+                            </li>
+                            <li> <a href="#"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+
+                                    Explore
+                                </a>
+                            </li>
+                            <li>
+                                <a href="contact.html"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                                    Find us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                                    Privacy Policy
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-lg-0 mt-4">
+                    <div class="footer-lavi">
+                        <h3 class="mb-3 lavi_title">Contact Us</h3>
+                        <hr>
+                        <div class="last-w3layouts-contact">
+                            <p>
+                                <a href="mailto:example@email.com">2017212790@bupt.edu.cn</a>
+                            </p>
+                        </div>
+                        <div class="last-w3layouts-contact my-2">
+                            <p>+ 456 123 7890</p>
+                        </div>
+                        <div class="last-w3layouts-contact">
+                            <p>Beijing University of Posts and Telecommunications, Haidian District, Beijing</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- //footer bottom -->
+    </footer>
+    <!-- //footer -->
+    <div class="copy-right">
+        <div class="container">
+            <div class="row">
+                <p class="copy-right-grids text-md-left text-center my-sm-4 my-4 col-md-6">Copyright &copy; 2020.Group777 All rights reserved.</p>
+                <div class="w3layouts-footer text-md-right text-center mt-4 col-md-5">
+                    <ul class="list-unstyled w3layouts-icons">
+                        <li>
+                            <a href="#">
+                                <span class="fa fa-facebook-f"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa fa-twitter"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa fa-dribbble"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa fa-vk"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="move-top text-right col-md-1"><a href="#home" class="move-top"> <span class="fa fa-angle-up  mb-3" aria-hidden="true"></span></a></div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

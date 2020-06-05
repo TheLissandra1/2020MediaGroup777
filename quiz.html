@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <title>quiz</title>
+    <!-- Meta tag Keywords -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="" />
+    <script>
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+        
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+
+    </script>
+    <style>
+        button.correct :focus {background-color: #0000FF;} 
+        .correct:active{
+            background-color: rgb(198, 235, 198) !important;
+        }
+        .false:active{
+            background-color: rgb(235, 198, 198) !important;
+        }
+        .ques-single{
+            
+            margin-bottom: 30px;
+        }
+        .add-in{
+           
+            border:solid;
+            border-color: rgb(156, 156, 156);
+            border-radius: 30px;
+            margin-top: 50px;
+        }
+        .question-title{
+            margin-left: 30px;
+            margin-right: 30px;
+            margin-top: 30px;
+        }
+        .btn-in-question{
+            width: 920px;
+            margin-top: 30px;
+            margin-left: 30px;
+            color: #666;
+            
+        }
+    </style>
+    <!-- //Meta tag Keywords -->
+    <!-- Custom-Files -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Bootstrap-Core-CSS -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/slider.css" type="text/css" media="all" />
+    <!-- Style-CSS -->
+    <!-- font-awesome-icons -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <!-- //font-awesome-icons -->
+    <!-- /Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900" rel="stylesheet">
+    <!-- //Fonts -->
+</head>
+
+<body>
+    <div class="page-sidebar" style="position: fixed; margin-top: 560px; margin-left: 20px; width: 160px; ">
+        <ul class="list-unstyled" style="color: #666;">
+            
+            
+            <li><a href="#week1">week 1</a></li>
+            <li><a href="#week2">week 2</a></li>
+            <li><a href="#week3">week 3</a></li>
+            <li><a href="#week4">week 4</a></li>
+
+            
+           
+        </ul>
+    </div>
+    <!-- mian-content -->
+    <div class="main-w3layouts-header-sec inner-page" id="home">
+        <div class="overlay-innerpage">
+            <!-- header -->
+            <header>
+                <div class="container">
+                    <div class="header d-lg-flex justify-content-between align-items-center">
+                        <div class="header-section">
+                            <h1>
+                                <a class="navbar-brand logo editContent" href="index.html">
+                                    <span class="fa fa-angellist"></span> Java Nestling
+                                </a>
+                            </h1>
+                        </div>
+                        <div class="nav_section">
+                            <nav>
+                                <label for="drop" class="toggle mt-lg-0 mt-1"><span class="fa fa-bars" aria-hidden="true"></span></label>
+                                <input type="checkbox" id="drop" />
+                                <ul class="menu">
+                                    <li class="active"><a href="index.html">Home</a></li>
+                                   
+    
+                                    <li>
+                                        <!-- First Tier Drop Down -->
+                                        <label for="drop-2" class="toggle">Dropdown <span class="fa fa-angle-down" aria-hidden="true"></span> </label>
+                                        <a href="#skills">course <span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                                        <input type="checkbox" id="drop-2" />
+                                        <ul class="inner-dropdown">
+                                            <li><a href="week1.html">week1</a></li>
+                                            <li><a href="week2.html">week2</a></li>
+                                            <li><a href="week3.html">week3</a></li>
+                                            <li><a href="week4.html">week4</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="quiz.html">Quiz</a></li>
+                                    
+                                    <li><a href="contact.html">Contact Us</a></li>
+                                   
+    
+                                </ul>
+                            </nav>
+                        </div>
+    
+                    </div>
+                </div>
+            </header>
+            <!-- //header -->
+        </div>
+    </div>
+
+    <!-- //banner -->
+    <!-- //banner-botttom -->
+    <section class="content-info py-5">
+        <div class="container py-md-5">
+            <h3 class="title-w3pvt mb-5 text-center">online quiz</h3>
+            <div class="single-lavi-page mt-md-5 mt-4 px-lg-5">
+                <h3 class="title-w3pvt mb-5 text-left" id="week1">week1</h3>
+                <div class="add-in">
+                    <div class="ques-single">
+                    <h4 class="question-title text-left">1.	If you create a class with the name MusicSelector, what is the name of the source file that contains this class?</h4>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left false"><b>A.</b> TestMusicSelector.java</button>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left false"><b>B.</b> TheMusic.java</button>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left correct"><b>C.</b> MusicSelector.java</button>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left false"><b>D.</b> MusicSelector.class</button>
+                </div>
+                </div>
+                <div class="add-in">
+                    <div class="ques-single">
+                    <h4 class="question-title text-left">2.	How many asterisks would the following loop print out?</h4>
+                    <div style="margin-left: 50px; margin-top: 10px;">
+                        <p> for (int star=6; star<0; star--) {
+                            System.out.println(“**”);
+                        }
+                        </p>
+                    </div>
+
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left false"><b>A.</b> 18
+                        </button>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left correct"><b>B.</b> None</button>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left false"><b>C.</b> 6</button>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left false"><b>D.</b> 12</button>
+                </div>
+                </div>
+                <div class="add-in">
+                    <div class="ques-single">
+                    <h4 class="question-title text-left">3.	What does the following code do?</h4>
+                    <div style="margin-left: 50px; margin-top: 10px;">
+                        <p>int x=2, y=3, z=5;</p>
+                        <p>if ( (y>x) && (y<z) && (y<=y) && (x==4) )</p>
+                        <p>System.out.println(“no”);</p>
+                    </div>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left false"><b>A.</b> Gives a compilation error.</button>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left false"><b>B.</b> Displays no.</button>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left false"><b>C.</b> Displays yes.</button>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left correct"><b>D.</b> Displays nothing.</button>
+                </div>
+                </div>
+                <div class="add-in">
+                    <div class="ques-single">
+                    <h4 class="question-title text-left">4. In Java, a library of classes is called___??</h4>
+                    <img src="images/q5_2.jpg" style="margin-left:30px; margin-top:20px ;height: 230px; width: 950px;"> 
+                   
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left false"><b>A.</b> a folder</button>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left false"><b>B.</b>  a directory</button>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left correct"><b>C.</b>  a package</button>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left false"><b>D.</b> an application</button>
+                </div>
+            </div>
+                <div class="add-in" >
+                    <div class="ques-single">
+                    <h4 class="question-title text-left">5. What is the value produced by the following expression (int) (5.7+1)?</h4>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left correct" ><b>A.</b> 6</button>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left false" ><b>B.</b> 6.7</button>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left false" ><b>C.</b> 5</button>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left false"><b>D.</b>  7</button>
+                    </div>
+                </div>
+
+               
+            </div>
+            <div class="single-lavi-page mt-md-5 mt-4 px-lg-5">
+                <h3 class="title-w3pvt mb-5 text-left" id="week2">week2</h3>
+                <div class="add-in">
+                    <div class="ques-single">
+                    <h4 class="question-title text-left">1. Consider the program below. What does the codes below do?</h4>
+                    <div style="margin-left: 50px; margin-top: 10px;">
+                        <p>public class question1 {</p>
+                            <p style="margin-left: 30px; ">public static void main(String[] args) {</p>
+                                <p style="margin-left: 60px; ">int[] arr = new int[5];</p>
+                                <p style="margin-left: 60px; ">arr[0] = 3;</p>
+                                <p style="margin-left: 60px; ">arr[1] = 7;</p>
+                                <p style="margin-left: 60px; ">arr[2] = 4;</p>
+                                <p style="margin-left: 60px; ">arr[3] = 11;</p>
+                                <p style="margin-left: 60px; ">arr[4] = 9;</p>
+                                <p style="margin-left: 60px; ">int x =arr[0];</p>
+                                <p style="margin-left: 60px; ">for (int i = 1; i < arr.length; i++)</p>
+                                    <p style="margin-left: 90px; "> if (arr[i] <= x) {</p>
+                                        <p style="margin-left: 120px; ">x = a[i];</p>
+                                        <p style="margin-left: 90px; ">} </p>
+                                        <p style="margin-left: 60px; ">System.out.println("x=" + x);</p>
+                                    
+                                    <p style="margin-left: 30px; ">}</p> 
+                                    
+                                        
+                            <p style="margin-left: 30px; ">System.out.println(values[2][1]);</p>
+                            <p style="margin-left: 30px; ">}</p>
+                          <p>}</p>  
+
+                </div>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left false"><b>A.</b> Print the maximum number in the array.</button>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left correct"><b>B.</b> Print the minimum number in the array.</button>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left false"><b>C.</b> Print all numbers in the array.</button>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left false"><b>D.</b> Print the first number in the array.</button>
+                </div>
+                </div>
+                <div class="add-in">
+                    <div class="ques-single">
+                    <h4 class="question-title text-left">2. Consider the code fragment below. What are the contents of variable data after executing this code?</h4>
+                    <div style="margin-left: 50px; margin-top: 10px;">
+                        <p>public class question2 {</p>
+                            <p style="margin-left: 30px; ">public static void main(String[] args) {</p>
+                            <p style="margin-left: 60px; ">long[][] values = {{10L},
+                                {20L, 30L, 40L, 50L}};
+                                </p>
+                            <p style="margin-left: 30px; ">System.out.println(values[2][1]);</p>
+                            <p style="margin-left: 30px; ">}</p>
+                          <p>}</p>  
+                            
+
+                </div>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left false"><b>A.</b> The code compiles and displays 0.
+                        </button>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left false"><b>B.</b> The code compiles and displays 40.</button>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left false"><b>C.</b> The code compiles and displays 30.</button>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left correct"><b>D.</b> The code compiles but throws an ArrayIndexOutOfBoundsException at runtime. </button>
+                </div>
+                </div>
+                <div class="add-in">
+                    <div class="ques-single">
+                    <h4 class="question-title text-left">3. Given the classes Car and Truck defined below, what is the output of the code fragment shown?</h4>
+                    <div style="margin-left: 50px; margin-top: 10px;">
+                            <p>public class Car {</p>
+                                <p style="margin-left: 30px; ">public void m1() {System.out.println("car 1"); }</p>
+                                <p style="margin-left: 30px; ">public void m2() {System.out.println("car 2"); }</p>
+                                <p>}</p>
+                                <p>public class Truck extends Car {</p>
+                                    <p style="margin-left: 30px; ">public void m1() { System.out.println("truck 1"); } </p>
+                                <p>}</p>
+                                <p style="margin-left: 30px; ">Truck mycar = new Truck();</p>
+                                <p style="margin-left: 30px; ">mycar.m1();</p>
+                                <p style="margin-left: 30px; ">mycar.m2();</p>
+
+                    </div>
+                    
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left correct"><b>A.</b> truck 1, car 2</button>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left false"><b>B.</b> car 1, car 2</button>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left false"><b>C.</b> truck 1, car 1</button>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left false"><b>D.</b> car1, truck 1</button>
+                </div>
+                </div>
+                <div class="add-in">
+                    <div class="ques-single">
+                    <h4 class="question-title text-left">4. A class Animal has a subclass Dog. Which of the following is TRUE?</h4>
+                   
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left false"><b>A.</b> Dog cannot have subclasses.</button>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left false"><b>B.</b> Animal can have only one subclass.</button>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left correct"><b>C.</b> Dog has no other parent than Animal.</button>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left false"><b>D.</b> Dog cannot have siblings.</button>
+                </div>
+            </div>
+                <div class="add-in" >
+                    <div class="ques-single">
+                    <h4 class="question-title text-left">5. Identify whether the statements below are TRUE or FALSE:</h4>
+                    <div style="margin-left: 30px; margin-top: 20px;">
+                        <p>(1) A class can extend more than one superclass.</p>
+                        <p>(2) A subclass has direct access to its superclass’ private data and methods.</p>
+                    </div>
+                    
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left false" ><b>A.</b> (1) is true, (2) is false.</button>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left correct"><b>B.</b> (1) is false, (2) is false.</button>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left false" ><b>C.</b> (1) is true, (2) is true.</button>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left false"><b>D.</b> (1) is false, (2) is true.</button>
+                    </div>
+                </div>
+
+               
+            </div>
+            <div class="single-lavi-page mt-md-5 mt-4 px-lg-5">
+                <h3 class="title-w3pvt mb-5 text-left" id="week3">week3</h3>
+                <div class="add-in">
+                    <div class="ques-single">
+                    <h4 class="question-title text-left">1. Which phrase best describes a String object, after it has been constructed?   </h4>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left false"><b>A.</b> Changeable</button>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left correct"><b>B.</b> Read only</button>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left false"><b>C.</b> Write only</button>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left false"><b>D.</b> Inaccessible</button>
+                </div>
+                </div>
+                <div class="add-in">
+                    <div class="ques-single">
+                    <h4 class="question-title text-left">2. consider the following code: JButton myButton = new JButton(); 
+                        Which of the Java statements below would add a listener that dealt with mouse clicks? 
+                        </h4>
+
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left false"><b>A.</b> myButton.addActionListener();
+                        </button>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left correct"><b>B.</b> myButton.addMouseListener();</button>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left false"><b>C.</b> myButton.addButtonListener();</button>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left false"><b>D.</b> myButton.addClickListener(); </button>
+                </div>
+                </div>
+                <div class="add-in">
+                    <div class="ques-single">
+                    <h4 class="question-title text-left">3. You created the following interface: 
+                        public interface Shape {    
+                        public float area();  } 
+                        If the main() method for a test class contains the statement Shape a = new Shape();, then is this correct or incorrect? 
+                        </h4>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left false"><b>A.</b> Correct, and it would create a Shape object. </button>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left false"><b>B.</b> Incorrect, because the Shape interface has a constructor. </button>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left correct"><b>C.</b> Incorrect, because you cannot make an instance of an interface.</button>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left false"><b>D.</b> Correct, and it would create an interface object.</button>
+                </div>
+                </div>
+                <div class="add-in">
+                    <div class="ques-single">
+                    <h4 class="question-title text-left">4. What must be imported to get most graphics components?</h4>
+                   
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left false"><b>A.</b> java.Graphics </button>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left correct"><b>B.</b> java.awt.*</button>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left false"><b>C.</b>  java.util.*</button>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left false"><b>D.</b> java.* </button>
+                </div>
+            </div>
+                <div class="add-in" >
+                    <div class="ques-single">
+                    <h4 class="question-title text-left">5. Select the option that sets a Layout Manager dividing a Container into 2 rows of 3 columns. </h4>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left correct" ><b>A.</b> setLayout(new GridLayout(2, 3));</button>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left false" ><b>B.</b> setLayout(new GridLayout(3, 2));</button>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left false" ><b>C.</b> setLayout(3, 2); </button>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left false"><b>D.</b> setLayout(new FlowLayout(3, 2)); </button>
+                    </div>
+                </div>
+
+               
+            </div>
+            <div class="single-lavi-page mt-md-5 mt-4 px-lg-5">
+                <h3 class="title-w3pvt mb-5 text-left" id="week4">week4</h3>
+                <div class="add-in">
+                    <div class="ques-single">
+                    <h4 class="question-title text-left">1. What must be imported to get most graphics components?</h4>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left false"><b>A.</b> java.Graphics</button>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left correct"><b>B.</b> java.awt.*</button>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left false"><b>C.</b> java.util.*</button>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left false"><b>D.</b> java.*</button>
+                </div>
+                </div>
+                <div class="add-in">
+                    <div class="ques-single">
+                    <h4 class="question-title text-left">2. Consider the code fragment below. What are the contents of variable data after executing this code?</h4>
+                    <img src="images/q5_1.jpg" style="margin-left:30px; margin-top:20px ;"> 
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left false"><b>A.</b> {{2, 1, 1, 1}{3, 2, 1, 1}{3, 3, 2, 1}}
+                        </button>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left false"><b>B.</b> {{2, 3, 3}{1, 2, 3}{1, 1, 2}{1, 1, 1}}</button>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left correct"><b>C.</b> {{2, 3, 3, 3}{1, 2, 3, 3}{1, 1, 2, 3}}</button>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left false"><b>D.</b> {{2, 1, 1}{3, 2, 1}{3, 3, 2}{3, 3, 3}}</button>
+                </div>
+                </div>
+                <div class="add-in">
+                    <div class="ques-single">
+                    <h4 class="question-title text-left">3. Select the option that sets a Layout Manager dividing a Container into 2 rows of 3 columns.</h4>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left correct"><b>A.</b> setLayout(new GridLayout(2, 3));</button>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left false"><b>B.</b> setLayout(new GridLayout(3, 2));</button>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left false"><b>C.</b> setLayout(3, 2);</button>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left false"><b>D.</b> setLayout(new FlowLayout(3, 2));</button>
+                </div>
+                </div>
+                <div class="add-in">
+                    <div class="ques-single">
+                    <h4 class="question-title text-left">4. When this program is executed, what is the output?</h4>
+                    <img src="images/q5_2.jpg" style="margin-left:30px; margin-top:20px ;height: 230px; width: 950px;"> 
+                    <p style="margin-left: 30px;"><b>Hint:</b> The API entry for the substring() method of the String class is as follows:</p>
+                    <img src="images/q5_3.jpg" style="margin-left:30px; height: 230px; width: 950px;"> 
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left false"><b>A.</b> ava</button>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left false"><b>B.</b> Nothing, since there is no character at the index 0.</button>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left correct"><b>C.</b> Jav</button>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left false"><b>D.</b> JAVA</button>
+                </div>
+            </div>
+                <div class="add-in" >
+                    <div class="ques-single">
+                    <h4 class="question-title text-left">5. What is the best way to compare the contents of two StringBuffer objects?</h4>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left false" ><b>A.</b> By using the == operator.</button>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left correct" style="display:block; white-space:normal; "><b>B.</b> By using the equals() method of StringBuffer, after converting each of the objects to a String with the toString() method.</button>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left false" style="display:block; white-space:normal;"><b>C.</b> By constructing a String object from each StringBuffer and then using the == operator.</button>
+                    <button type="button" class="btn-in-question btn btn-default btn-lg text-left false"><b>D.</b> By using charAt() and == to do a character-by-character comparison.</button>
+                    </div>
+                </div>
+
+               
+            </div>
+
+        </div>
+    </section>
+    <!-- //banner-botttom -->
+
+    <!-- footer -->
+    <footer class="footer-content py-5">
+        <div class="container py-md-3">
+            <div class="footer-top text-center mb-5">
+                <h2>
+                    <a class="navbar-brand pt-3 mb-5" href="index.html">
+                        <span class="fa fa-angellist"></span> java nestling
+                    </a>
+                </h2>
+                <div class="contact-form mx-auto text-left">
+                    <form method="post" action="#">
+                        <div class="row subscribe-sec">
+                            <div class="col-md-9 con-gd">
+                                <input type="email" class="form-control" id="email" placeholder="Your Email here..." name="email" required>
+
+                            </div>
+                            <div class="col-md-3 con-gd">
+                                <button type="submit" class="btn btn-default">Subscribe</button>
+                            </div>
+
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+            <div class="row footer-top-inner-w3layouts">
+                <div class="col-lg-3 col-md-6 mt-lg-0 mt-4">
+                    <div class="footer-lavi">
+                        <h3 class="mb-3 lavi_title">Links</h3>
+                        <hr>
+                        <ul class="list-info-lavi">
+                            <li>
+                                <a href="about.html"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                                    Our Mission
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                                    Latest Posts
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                                    Explore
+                                </a>
+                            </li>
+                            <li>
+                                <a href="contact.html"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                                    Find us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                                    Privacy Policy
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-lg-0 mt-4">
+                    <div class="footer-lavi">
+                        <h3 class="mb-3 lavi_title">Navigation</h3>
+                        <hr>
+                        <ul class="list-info-lavi">
+                            <li>
+                                <a href="index.html"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="about.html"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                                    About Us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="single.html"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                                    Single Page
+                                </a>
+                            </li>
+                            <li>
+                                <a href="about.html"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                                    Team
+                                </a>
+                            </li>
+                            <li>
+                                <a href="contact.html"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                                    Contact Us
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-lg-0 mt-4">
+                    <div class="footer-lavi">
+                        <h3 class="mb-3 lavi_title">Customer Care</h3>
+                        <hr>
+                        <ul class="list-info-lavi">
+                            <li>
+                                <a href="about.html"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                                    Our Mission
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                                    Latest Posts
+                                </a>
+                            </li>
+                            <li> <a href="#"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+
+                                    Explore
+                                </a>
+                            </li>
+                            <li>
+                                <a href="contact.html"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                                    Find us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                                    Privacy Policy
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-lg-0 mt-4">
+                    <div class="footer-lavi">
+                        <h3 class="mb-3 lavi_title">Contact Us</h3>
+                        <hr>
+                        <div class="last-w3layouts-contact">
+                            <p>
+                                <a href="mailto:example@email.com">2017212790@bupt.edu.cn</a>
+                            </p>
+                        </div>
+                        <div class="last-w3layouts-contact my-2">
+                            <p>+ 456 123 7890</p>
+                        </div>
+                        <div class="last-w3layouts-contact">
+                            <p>Beijing University of Posts and Telecommunications, Haidian District, Beijing</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- //footer bottom -->
+    </footer>
+    <!-- //footer -->
+    <div class="copy-right">
+        <div class="container">
+            <div class="row">
+                <p class="copy-right-grids text-md-left text-center my-sm-4 my-4 col-md-6">Copyright © 2020.Group777 All rights reserved.</p>
+                <div class="w3layouts-footer text-md-right text-center mt-4 col-md-5">
+                    <ul class="list-unstyled w3layouts-icons">
+                        <li>
+                            <a href="#">
+                                <span class="fa fa-facebook-f"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa fa-twitter"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa fa-dribbble"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa fa-vk"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="move-top text-right col-md-1"><a href="#home" class="move-top"> <span class="fa fa-angle-up  mb-3" aria-hidden="true"></span></a></div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

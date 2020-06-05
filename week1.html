@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Week1</title>
+    <!-- Meta tag Keywords -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="" />
+    <script>
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+
+    </script>
+    <!-- //Meta tag Keywords -->
+    <!-- Custom-Files -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Bootstrap-Core-CSS -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/slider.css" type="text/css" media="all" />
+    <!-- Style-CSS -->
+    <!-- font-awesome-icons -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <!-- //font-awesome-icons -->
+    <!-- /Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900" rel="stylesheet">
+    <!-- //Fonts -->
+</head>
+
+<body>
+    <!-- mian-content -->
+    <div class="page-sidebar" style="position: fixed; margin-top: 560px; margin-left: 20px; width: 180px; ">
+        <ul class="list-unstyled" style="color: #666;">
+            
+            <li style="font-size: large; border-bottom: solid; margin-bottom: 10px;"><b>quick reference</b></li>
+            <li><a href="#day1">Java history</a></li>
+            <li><a href="#day2">OO Introduction</a></li>
+            <li><a href="#day3">Object Basics (1)</a></li>
+            <li><a href="#day4">Object Basics (2)</a></li>
+            <li><a href="#day5">Object Basics (3)</a></li>
+            
+           
+        </ul>
+    </div>
+    <div class="main-w3layouts-header-sec inner-page" id="home">
+        <div class="overlay-innerpage">
+            <!-- header -->
+            <header>
+                <div class="container">
+                    <div class="header d-lg-flex justify-content-between align-items-center">
+                        <div class="header-section">
+                            <h1>
+                                <a class="navbar-brand logo editContent" href="index.html">
+                                    <span class="fa fa-angellist"></span> Java Nestling
+                                </a>
+                            </h1>
+                        </div>
+                        <div class="nav_section">
+                            <nav>
+                                <label for="drop" class="toggle mt-lg-0 mt-1"><span class="fa fa-bars" aria-hidden="true"></span></label>
+                                <input type="checkbox" id="drop" />
+                                <ul class="menu">
+                                    <li class="active"><a href="index.html">Home</a></li>
+                                   
+    
+                                    <li>
+                                        <!-- First Tier Drop Down -->
+                                        <label for="drop-2" class="toggle">Dropdown <span class="fa fa-angle-down" aria-hidden="true"></span> </label>
+                                        <a href="#skills">course <span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                                        <input type="checkbox" id="drop-2" />
+                                        <ul class="inner-dropdown">
+                                            <li><a href="week1.html">week1</a></li>
+                                            <li><a href="week2.html">week2</a></li>
+                                            <li><a href="week3.html">week3</a></li>
+                                            <li><a href="week4.html">week4</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="quiz.html">Quiz</a></li>
+                                
+                                    <li><a href="contact.html">Contact Us</a></li>
+                                   
+    
+                                </ul>
+                            </nav>
+                        </div>
+    
+                    </div>
+                </div>
+            </header>
+            <!-- //header -->
+        </div>
+    </div>
+
+    <!-- //banner -->
+    <!-- //banner-botttom -->
+    <section class="content-info py-5">
+        <div class="container py-md-5">
+            <h1 class="title-w3pvt mb-5 text-center">Java Week1</h1>
+            <h3 class="title-w3pvt mb-5 text-center">A history of Java, Basic Java Skills</h3>
+            <p class="text-center">Let’s take a quick look at Java before we start learning programming.</p>
+            <div class="single-lavi-page mt-md-5 mt-4 px-lg-5">
+                <div class="content-sing-w3layouts px-lg-5">
+                    <img class="img-fluid" src="images/banner1.jpg" alt="">
+                    <h2 style="margin-top:30px ;" id="day1">Past, Present and Future of Java</h2>
+                    <h4>History:</h4>
+                    <ul class="list-unstyled">
+                        <li><p>· Microsystems began working on a programming language for “information appliances”- mobile phones, PDAs (PDA=Personal Digital Assistant).</p></li>
+                        <li><p>· Requirements: safe language, small footprint, efficient development</p></li>
+                      </ul>
+                      <h4>However too soon…</h4>
+                      <ul class="list-unstyled">
+                          <li><p>· As PDAs failed, emphasis focused on embedded software systems such as Set-top boxes; at this point the language was called Oak.</p></li>
+                          <li><p>· In 1993, the World Wide Web (WWW) started to take off and Mosaic (first graphical browser) was released!</p></li>
+                        </ul>
+                        <h4>As the WWW started to become more used…</h4>
+                      <ul class="list-unstyled">
+                          <li><p>· Oak was renamed to Java</p></li>
+                          <li><p>· Sun redevelops Mosaic (“Hot Java”) as a web browser.</p></li>
+                          <li><p>· The browser had the ability to dynamically download Java code – these are called applets.</p></li>
+                          </ul>
+
+                    <h2 style="margin-top:30px ;">What Java does for the WWW?</h2>
+                    <h4>Java allows users to interact with a web page. It allows users to:</h4>
+                    <ul class="list-unstyled">
+                        <li><p>—	play games</p></li>
+                        <li><p>—	calculate spreadsheets</p></li>
+                        <li><p>—	chat in real time</p></li>
+                        <li><p>—	get continuously updated data</p></li>
+                        <li><p>—	listen to inline sounds that play in real time whenever a user loads a page</p></li>
+                        <li><p>—	cartoon style animations</p></li>
+                        <li><p>—	real-time video</p></li>
+                        <li><p>and much, much more…</p></li>
+                        </ul>
+
+                        <p>But Java is not just a ‘web thing’. Java does almost anything other traditional languages (e.g. C++, Pascal) do, but has learnt from other languages’ mistakes. It is cleaner and easier to use.</p>
+                        <h4>What is Java: General Characteristics</h4>
+                        <p>Java is:</p>
+                        <ul class="list-unstyled">
+                            <li><p>—	A simple language</p></li>
+                            <li><p>—	Object Oriented (OO) – rich, well-designed class library</p></li>
+                            <li><p>—	Platform independent – “Write once, Run anywhere”</p></li>
+                            <li><p>—	Robust – error checking</p></li>
+                            <li><p>—	Secure – security features</p></li>
+                            <li><p>—	Multi-threaded – for efficient operation</p></li>
+                            <li><p>—	Dynamic – extensible</p></li>
+                            <li><p>and much, much more…</p></li>
+                            </ul>
+                        <p>For now, software to compile and run Java is released free for all major operating systems. Java has huge backing from industry. Java is a rich and still growing language with a vast collection of classes supporting, e.g. Graphical User Interface (GUI) and multi-media developments.</p>
+                        <h4>Phases of a Java Program</h4>
+                        <img src="images/w1_1.jpg" />
+                        
+                       <p>—	Each application must have a main() method.
+                        The interpreter executes main first.
+                        </p>
+                        <img src="images/w1_9.jpg" />
+                        <p>main() method header:</p>
+                        <img src="images/w1_10.jpg" />
+                        <p>—	Statement: console output can be achieved using System.out.println(“a string”);</p>
+                        <img src="images/w1_11.jpg" />
+                        <p>—	Each statement ends with a semicolon; and strings (or text) must be within “”.</p>
+                        <img src="images/w1_12.jpg" />
+                        <h4>Java Comments</h4>
+                        <p>There are 3 formats of Java comments:</p>
+                        <img src="images/w1_13.jpg" />
+
+                        <h4>General Notes</h4>
+                        <p>Programs should always follow the KISS (Keep It Simple Stupid) principle.</p>
+                        <p>—	This means that if there are, e.g. two ways to do something and one is shorter or simpler than the other one, then you should always choose the simplest way!</p>
+                        <p>Always test your programs on every platform that you intend them to be run on!</p>
+                        <p>—	Although it is easier to write portable programs in Java, it is not a foolproof process.</p>
+
+                        <h4>Variables</h4>
+                        <ul>
+                            <li><p>Unlike almost every other language, variables in Java can be declared anywhere in a program (though the program logic may require you to define certain variables before certain statements).</p></li>
+                            <li><p>The format for variable declarations is essentially the same as in C.</p></li>
+                            <li><p>Thus you can either declare variables as follows:
+                                typeName name1, name2, …namen;
+                                typeName name1=initvalue;
+                                </p></li>
+                        </ul>
+
+                        <h4>Basic types</h4>
+                        <p>Java is strongly typed and strongly classed. Only variables with the same types or classes can be used together.</p>
+                        <ul>
+                            <li><p>For integers: byte, short, int, long</p></li>
+                            <li><p>For real numbers: float, double</p></li>
+                            <li><p>For Boolean values: boolean</p></li>
+                            <li><p>For characters: char</p></li>
+                        </ul>
+                        <p>Every type in Java has a default value, and sometimes a variable will be initialized to this default value.</p>
+                        <p><b>Notes:</b> Always get in the habit of initializing your variables.
+                            In Java, Strings are not a primitive data type, they are objects. (More about this later…)
+                      </p>
+                      <h2 style="margin-top:30px ;" id="day2">OO Introduction and Basic OO (OO=Object-Oriented)</h2>
+                      <h4>What is OO programming?</h4>
+                      <ul>
+                          <li><p>Constructing software systems which are structured collections (or sets) of classes.</p></li>
+                          <li><p>These classes produce instances called objects, which communicate with each other using messages.</p></li>
+                      </ul>
+                      <h4>What is an object?</h4>
+                      <ul>
+                          <li><p>An object is a thing; it is a fundamental entity in Java.</p></li>
+                          <li><p>Objects tend to be the nouns in specifications.</p></li>
+                          <li><p>In software terms, e.g. car; bank account; student; employee; complex number; GUI button.</p></li>
+                      </ul>
+                      <h4>What is not an object?</h4>
+                      <ul>
+                          <li><p>Attributes (or states) of an object: essentially anything that describes or quantifies an object.</p></li>
+                          <li><p>Objects tend to be the nouns in specifications.</p></li>
+                          <li><p>In software terms, e.g. car; bank account; student; employee; complex number; GUI button.</p></li>
+                      </ul>
+                      <h4>What is not an object?</h4>
+                      <ul>
+                          <li><p>Attributes (or states) of an object: essentially anything that describes or quantifies an object.</p></li>
+                          <ul style="margin-left: 30px;">
+                            <li><p>speed, colour, make, model, and position are all attributes of a car object;</p></li>
+                            <li><p>number, owner, balance might be attributes of a bank account object.</p></li>
+                        </ul>
+                    </ul>
+                    <ul>
+                        <ul style="margin-left: 30px;">Operations (or behaviours) of an object: they mostly correspond to verbs in a requirements specification.
+                            <li><p>turn left, speed up, slow down, turn right are all operations of a car object.</p></li>
+                            <li><p>open, close, deposit, withdraw, are all operations on a bank account object.</p></li>
+                        </ul>
+
+                    </ul>
+                    <h4>What is a class?</h4>
+                    <ul>
+                        <li><p>An object is defined by a class. (An object is an instance of a particular class.)</p></li>
+                        <li><p>The class defines the attributes and operations exposed by one or more related objects.</p></li>
+                        <li><p>In Java, a class is to define a kind of object or in other words, to define a data type.</p></li>
+                    </ul>
+                    <h4>OO versus Procedural</h4>
+                    <ul>
+                        <li><p>Procedural approach</p></li>
+                        <ul style="margin-left: 30px;">
+                            <li><p>2 procedures that behave differently based on the shape.</p></li>
+                            <li><p>If anything about the specification changes, then these 2 methods have to change.</p></li>
+                        </ul>
+                        <li><p>OO approach</p></li>
+                        <ul style="margin-left: 30px;">
+                            <li><p>3 classes, with 2 methods each.</p></li>
+                            <li><p>Each object controls its own behaviour.</p></li>
+                        </ul>
+                    </ul>
+                    <h2 style="margin-top:30px ;" id="day3">Object Basics: how OO works – Objects and Classes</h2>
+                    <h4>Objects and Classes in Java</h4>
+                    <ul>
+                        <li><p>In software terms, the description of a group of objects is known as a class, whereas a particular member of a class is known as an object (or instance). For example,</p></li>
+                        <ul style="margin-left: 30px;">
+                            <li><p>myCar is an instance of the overall class Car</p></li>
+                            <li><p>you are a specific instance of the class Person</p></li>
+                        </ul>
+                        <li><p>A class only exists at compile time; an object only exists at runtime.</p></li>
+                        <li><p>Class Name is the name of the class, which must be the same as the file name.</p></li>
+                        <li><p>Typically a class provides the template for an object: in the "class body", we declare the attributes and operations of the class.</p></li>
+                        <li><p>There can exist many objects or instances of a class.</p></li>
+                    </ul>
+                    <h4>Attributes</h4>
+                    <ul>
+                        <li><p>Attributes represent the state of an object. For example,</p></li>
+                        <ul style="margin-left: 30px;">
+                            <li><p>number, owner, and balance all contribute to the internal state of a particular ‘bank account’ object.</p></li>
+                        </ul>
+                        <li><p>There are 2 main types of attributes:</p></li>
+                        <ul style="margin-left: 30px;">
+                            <li><p>Instance variables (discussed now)</p></li>
+                            <li><p>Class variables (discussed later)</p></li>
+                        </ul>
+                    </ul>
+                    <h2 style="margin-top:30px ;" id="day4">Object Basics: how OO works – Constructors/Data Encapsulation/Access Modifiers</h2>
+                    <h4>Constructors</h4>
+                    <ul>
+                        <li><p>A constructor is a special method, with same name as the class name, used for initialization.</p></li>
+                        <ul style="margin-left: 30px;">
+                            <li><p>A constructor always has the same name as the class.</p></li>
+                            <li><p>It does not have a return type, not even void!</p></li>
+                            <li><p>An empty no-argument constructor is provided for you by Java.</p></li>
+                        </ul>
+                        <li><p>Constructors may have parameters if you write your own.</p></li>
+                        <li><p>A class can have many constructors.</p></li>
+                    </ul>
+                    <h4>Data Encapsulation</h4>
+                    <ul>
+                        <li><p>Data Encapsulation (or information hiding) refers to when the internal state and operation are hidden from others.</p></li>
+                        <ul style="margin-left: 30px;">
+                            <li><p>This is a good thing! Since objects are only accessible through well defined interfaces, ideally nothing unexpected should happen!</p></li>
+                            <li><p>The more information class A knows about class B, the greater the possibility that changing class A will adversely affect Class B. In an ideal world, making internal changes to class A should have no, or very little, effect on other classes.</p></li>
+                        </ul>
+                        <li><p>An object should be self-governing (or work by itself).</p></li>
+                        <li><p>We should NOT allow direct access to an object’s variables.</p></li>
+                        <li><p>Any changes to the object's state (i.e. its variables) should be made ONLY by that object's methods.</p></li>
+                        <li><p>Give private access, unless there is a good reason not to!</p></li>
+                    </ul>
+                    <h4>Access Modifiers</h4>
+                    <p>We do not want to make all our instance variables and methods public– this defeats the purpose of information hiding.</p>
+                    <ul>
+                        <li><p>We can state whether we want methods and instance variables to be public or private by qualifying them with the public or private keywords.</p></li>
+                        <li><p>Each object has a public interface through which we can manipulate it.</p></li>
+                        <li><p>The only way that we can manipulate an object is via its interface.</p></li>
+                        <li><p>The object’s state and internal operation are kept behind the scenes.</p></li>
+                    </ul>
+                    <img src="images/w1_14.jpg" style="width: 75%; height: 75%;">
+                    <ul>
+                        <li><p>Using accessor (or getter) and mutator (or setter) methods is always preferable to declaring things as public.</p></li>
+                        <p>By using those methods, the object can control who sees and does what with it and thus has a better chance of remaining consistent.</p>
+                        <li><p>You should get into the habit of always qualifying your instance variables and methods</p></li>
+                    </ul>
+                    <h2 style="margin-top:30px ;" id="day5"> Object Basics: how OO works – Instance and Local Variables/Method</h2>
+                   <h4>Instance and Local Variables</h4>
+                   <ul>
+                       <li><p>Instance variables are declared inside a class but not inside a method.</p></li>
+                       <ul style="margin-left: 30px;">
+                            <li><p>are initialized to the default value;</p></li>
+                            <li><p>are valid (or have scope) throughout the entire class.</p></li>
+                       </ul>
+                       <li><p>Local variables are declared within a method.</p></li>
+                       <ul style="margin-left: 30px;">
+                        <li><p>are NOT initialized to the default value, and so must be initialized.</p></li>
+                        <li><p>have scope only within that method!</p></li>
+
+                    </ul>
+                   </ul>
+                   <h4>Method</h4>
+                   <p><b>General Template:</b></p>
+                   <p>modifiers returnType methodName (parameters) {statements;}
+                </p>
+                <ul>
+                    <li><p>To use a method, we call or invoke it.</p></li>
+                    <li><p>A method uses parameters</p></li>
+                    <li><p>The caller passes arguments.</p></li>
+                </ul>
+                <h4>Method Overloading</h4>
+                <ul>
+                    <li><p>Java allows several methods to be defined with the same name, as long as they have different sets of parameters.</p></li>
+                    <li><p>The compiler resolves which particular method is required by examining the signature of the method–its name and the types and sequence of its parameters.</p></li>
+                    <li><p>The return type is NOT used to differentiate methods, so you cannot declare two methods with the same signature even if they have a different return type.</p></li>
+                </ul>
+
+                    </div>
+                    <div style="height: 30px;"></div>
+               
+                <div class="comment-sec-w3layouts">
+                    <h4 class="leave-w3layouts mb-5">0 Comment</h4>
+                    
+                </div>
+                <div class="comment-bottom lavi_mail_grid_right p-0 my-lg-5 my-4">
+                    <h4 class="leave-w3layouts mb-5">Post a Comment</h4>
+                    <form action="#" class="w3layouts-contact-fm" method="post">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label>First Name</label>
+                                    <input class="form-control" type="text" name="Name" placeholder="" required="">
+                                </div>
+                                <div class="form-group">
+                                    <label>Last Name</label>
+                                    <input class="form-control" type="text" name="Name" placeholder="" required="">
+                                </div>
+                                <div class="form-group">
+                                    <label>Email</label>
+                                    <input class="form-control" type="email" name="Email" placeholder="" required="">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label>Write Message</label>
+                                    <textarea class="form-control" name="Message" placeholder="" required=""></textarea>
+                                </div>
+
+
+
+                            </div>
+                            <div class="form-group mx-auto mt-3">
+                                <button type="submit" class="btn submit">Submit Comment</button>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- //banner-botttom -->
+
+    <!-- footer -->
+    <footer class="footer-content py-5">
+        <div class="container py-md-3">
+            <div class="footer-top text-center mb-5">
+                <h2>
+                    <a class="navbar-brand pt-3 mb-5" href="index.html">
+                        <span class="fa fa-angellist"></span> java nestling
+                    </a>
+                </h2>
+                <div class="contact-form mx-auto text-left">
+                    <form method="post" action="#">
+                        <div class="row subscribe-sec">
+                            <div class="col-md-9 con-gd">
+                                <input type="email" class="form-control" id="email" placeholder="Your Email here..." name="email" required>
+
+                            </div>
+                            <div class="col-md-3 con-gd">
+                                <button type="submit" class="btn btn-default">Subscribe</button>
+                            </div>
+
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+            <div class="row footer-top-inner-w3layouts">
+                <div class="col-lg-3 col-md-6 mt-lg-0 mt-4">
+                    <div class="footer-lavi">
+                        <h3 class="mb-3 lavi_title">Links</h3>
+                        <hr>
+                        <ul class="list-info-lavi">
+                            <li>
+                                <a href="about.html"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                                    Our Mission
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                                    Latest Posts
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                                    Explore
+                                </a>
+                            </li>
+                            <li>
+                                <a href="contact.html"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                                    Find us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                                    Privacy Policy
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-lg-0 mt-4">
+                    <div class="footer-lavi">
+                        <h3 class="mb-3 lavi_title">Navigation</h3>
+                        <hr>
+                        <ul class="list-info-lavi">
+                            <li>
+                                <a href="index.html"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="about.html"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                                    About Us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="single.html"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                                    Single Page
+                                </a>
+                            </li>
+                            <li>
+                                <a href="about.html"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                                    Team
+                                </a>
+                            </li>
+                            <li>
+                                <a href="contact.html"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                                    Contact Us
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-lg-0 mt-4">
+                    <div class="footer-lavi">
+                        <h3 class="mb-3 lavi_title">Customer Care</h3>
+                        <hr>
+                        <ul class="list-info-lavi">
+                            <li>
+                                <a href="about.html"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                                    Our Mission
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                                    Latest Posts
+                                </a>
+                            </li>
+                            <li> <a href="#"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+
+                                    Explore
+                                </a>
+                            </li>
+                            <li>
+                                <a href="contact.html"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                                    Find us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                                    Privacy Policy
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-lg-0 mt-4">
+                    <div class="footer-lavi">
+                        <h3 class="mb-3 lavi_title">Contact Us</h3>
+                        <hr>
+                        <div class="last-w3layouts-contact">
+                            <p>
+                                <a href="mailto:example@email.com">2017212790@bupt.edu.cn</a>
+                            </p>
+                        </div>
+                        <div class="last-w3layouts-contact my-2">
+                            <p>+ 456 123 7890</p>
+                        </div>
+                        <div class="last-w3layouts-contact">
+                            <p>Beijing University of Posts and Telecommunications, Haidian District, Beijing</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- //footer bottom -->
+    </footer>
+    <!-- //footer -->
+    <div class="copy-right">
+        <div class="container">
+            <div class="row">
+                <p class="copy-right-grids text-md-left text-center my-sm-4 my-4 col-md-6">Copyright &copy; 2019.Company name All rights reserved.More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
+                <div class="w3layouts-footer text-md-right text-center mt-4 col-md-5">
+                    <ul class="list-unstyled w3layouts-icons">
+                        <li>
+                            <a href="#">
+                                <span class="fa fa-facebook-f"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa fa-twitter"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa fa-dribbble"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa fa-vk"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="move-top text-right col-md-1"><a href="#home" class="move-top"> <span class="fa fa-angle-up  mb-3" aria-hidden="true"></span></a></div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Week3</title>
+    <!-- Meta tag Keywords -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="" />
+    <script>
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+
+    </script>
+    <!-- //Meta tag Keywords -->
+    <!-- Custom-Files -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Bootstrap-Core-CSS -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/slider.css" type="text/css" media="all" />
+    <!-- Style-CSS -->
+    <!-- font-awesome-icons -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <!-- //font-awesome-icons -->
+    <!-- /Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900" rel="stylesheet">
+    <!-- //Fonts -->
+</head>
+
+<body>
+    <div class="page-sidebar" style="position: fixed; margin-top: 560px; margin-left: 20px; width: 180px; ">
+        <ul class="list-unstyled" style="color: #666;">
+            
+            <li style="font-size: large; border-bottom: solid; margin-bottom: 10px;"><b>quick reference</b></li>
+            <li><a href="#day1">Interfaces</a></li>
+            <li><a href="#day2">Garbage Collection</a></li>
+            <li><a href="#day3">Instance</a></li>
+            <li><a href="#day4">Strings</a></li>
+            <li><a href="#day5">GUI in Java</a></li>
+            
+           
+        </ul>
+    </div>
+    <!-- main-content -->
+    <div class="main-w3layouts-header-sec inner-page" id="home">
+        <div class="overlay-innerpage">
+            <!-- header -->
+            <header>
+                <div class="container">
+                    <div class="header d-lg-flex justify-content-between align-items-center">
+                        <div class="header-section">
+                            <h1>
+                                <a class="navbar-brand logo editContent" href="index.html">
+                                    <span class="fa fa-angellist"></span> Java Nestling
+                                </a>
+                            </h1>
+                        </div>
+                        <div class="nav_section">
+                            <nav>
+                                <label for="drop" class="toggle mt-lg-0 mt-1"><span class="fa fa-bars" aria-hidden="true"></span></label>
+                                <input type="checkbox" id="drop" />
+                                <ul class="menu">
+                                    <li class="active"><a href="index.html">Home</a></li>
+                                  
+    
+                                    <li>
+                                        <!-- First Tier Drop Down -->
+                                        <label for="drop-2" class="toggle">Dropdown <span class="fa fa-angle-down" aria-hidden="true"></span> </label>
+                                        <a href="#skills">course <span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                                        <input type="checkbox" id="drop-2" />
+                                        <ul class="inner-dropdown">
+                                            <li><a href="week1.html">week1</a></li>
+                                            <li><a href="week2.html">week2</a></li>
+                                            <li><a href="week3.html">week3</a></li>
+                                            <li><a href="week4.html">week4</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="quiz.html">Quiz</a></li>
+                                
+                                    <li><a href="contact.html">Contact Us</a></li>
+                                   
+    
+                                </ul>
+                            </nav>
+                        </div>
+    
+                    </div>
+                </div>
+            </header>
+            <!-- //header -->
+        </div>
+    </div>
+
+    <!-- //banner -->
+    <!-- //banner-botttom -->
+    <section class="content-info py-5">
+        <div class="container py-md-5">
+            <h1 class="title-w3pvt mb-5 text-center">Java Week3</h1>
+            <h3 class="title-w3pvt mb-5 text-center">Advanced java programming</h3>
+            <p class="text-center">This section introduces some of the advanced features of Java.</p>
+            <div class="single-lavi-page mt-md-5 mt-4 px-lg-5">
+                <div class="content-sing-w3layouts px-lg-5">
+                    <img class="img-fluid" src="images/banner3.jpg" alt="">
+                    <h2 style="margin-top:30px ;" id="day1">Interfaces</h2>
+                    <h4>1.	What is interface?</h4>
+                    <ul>
+                        <li><p>An interface is like a 100% abstract class.
+                            An interface allows polymorphic capabilities without the problems of multiple inheritance.
+                            </p></li>
+                        <li><p>Since an interface has NO implemented methods, multiple inheritance is not a problem, as no class inherits a "finished" method.</p></li>
+                    </ul>
+                   <h4>2.	Multiple interfaces</h4>
+                   <p>Can implement as many interfaces as you need! Since no code is actually inherited (no generic methods), you have no confusion as to which method the class you written has inherited!</p>
+                   <h4>3.	extends and implements</h4>
+
+                   <ul>
+                        <li><p>A class can only extend 1 class: meaning 1 class can only have 1 parent; 
+                            </p></li>
+                        <li><p>A class can implement as many interfaces as it likes!</p></li>
+                      </ul>
+
+                      <h4>4.	Use it actually</h4>
+                      <ul>
+                          <li><p>At design time, we can write code that needn’t worry about the implementation of any class that implements Flyable (or BigBadies or Teleportable) </p></li>
+                          <p>–We can treat the implementation as a black box, and rest safe in the knowledge that it must provide fly(). </p>
+                          <li><p>Interfaces are then like certificates, which say “I provide these services”.</p></li>
+                          <p>–You can’t make an instance of an interface,</p>
+                          <p><i>so e.g., Flyable friend = new Flyable(); <b>// ERROR!</b></i></p>
+                          
+                      </ul>
+
+                        <h4>5.	Abstract Classes & Interfaces</h4>
+                      <ul>
+                          <li><p>Neither <b>abstract classes</b> and <b>interfaces</b> can have an instance made of them.</p></li>
+                          <li><p>If you don’t provide any method implementation, then use an interface instead of an abstract class. </p></li>
+                          <li><p>A class can implement many interfaces, but only extends one superclass.</p></li>
+                          <li><p>Interfaces are how Java provides (a kind of)<b> multiple inheritance.</b> </p></li>
+                          <li><p>If even one method in a class is declared to be abstract, then the whole class<b> must be declared abstract.</b> </p></li>
+                        <li><p>Both abstract classes and interfaces can contain constants, which will be inherited by classes that extend or implement them, respectively.</p></li>  
+                        </ul>
+                       <h4>6.	Extending an Interface</h4>
+                       <img src="images/w3_1.jpg" style="height: 50%;width: 50%;">
+                       <p><b>Child inherits from Father and Mother and has the following:</b></p>
+                       <img src="images/w3_2.jpg" style="height: 50%;width: 50%;">
+                       <h4>7.	Name Conflicts</h4>
+                       <ul>
+                           <li><p>What happens if Father interface and Mother interface contain same named methods and variables(constants)? 
+                            –Same named methods: 
+                            </p></li>
+                            <li><p>If they have different parameters, then Child interface has both (this is same as overloading).</p></li>
+                            <li><p>If they differ by only return type, then error. </p></li>
+                            <li><p>If the two methods are identical, only keep one. 
+                                –Same named constants: we keep both constants. To refer to them, use parent interface name as prefix. 
+                                </p></li>
+                            <li><p>Example: –If both Father and Mother contain an age variable, then Child interface contains both. –To refer to them, we use: <b>Father.age</b> or <b>Mother.age</b>.</p></li>
+                       
+                        </ul>
+
+                        <h4>8.	Multiple Inheritance in Java</h4>
+                        <ul>
+                            <li><p>Java’s “multiple inheritance” is at <b>interface level</b> only! </p></li>
+                            <p>If you’ve already got class A and class B, and you want to extend A and B together to generate class C, forget about it. You can’t do that! </p>
+                            <li><p><b>Only interfaces can do multiple inheritance…</b> at design level.</p></li>
+                        </ul>
+                        <h2 style="margin-top:30px ;" id="day2"> Garbage Collection</h2>
+                        <h4>1.	Heap versus Stack</h4>
+                        <ul>
+                            <li><p>Running a Java program: 
+                                –Memory is obtained by the JVM, from the OS being used. 
+                                </p></li>
+                            <li><p>Two main areas of memory in Java: </p>
+                                <ul>
+                                    <li><p>(Garbage-collectible) Heap (where objects live); </p></li>
+                                    <li><p>Stack (where local variables and methods, when called, live).</p></li>
+                            </ul></li>
+                        </ul>
+                        <img src="images/w3_3.jpg" style="height: 75%;width: 75%;">
+                        <h4>2.	Local Variables & Instance Variables</h4>
+                        <ul>
+                            <li><p>Main types of variables we care about:  
+                                –Local (also known as stack) variables 
+                                </p></li>
+                            <li><p>Variables declared in a method and method parameters.</p></li>
+                            <li><p>Temporary variables, alive only when the method they belong to is on the Stack. 
+                                –Instance variables 
+                                </p></li>
+                            <li><p>Variables declared in a class (not inside of a method).</p></li>
+                            <li><p>Live inside the object they belong to.</p></li>
+                        </ul>
+
+                        <h4>3.	Methods and the Stack</h4>
+                        <ul>
+                            <li><p>Method goes on top of the Stack when it is called and stays in the Stack until it’s done (closing curly brace). </p></li>
+                            <li><p>Stack frame:</p></li>
+                            <ul>
+                                <li><p>What actually is pushed onto the Stack.</p></li>
+                                <li><p>Contains the state of the method (which line of code is executing and values of all local variables). </p></li>
+                            </ul>
+                            <li><p>Method at top of the Stack is always the method being executed.</p></li>
+                        </ul>
+                        
+                       
+                    
+
+                        <h4>4.	Object References & Where Variables Live</h4>
+                        <ul>
+                            <li><p>Object reference(aka non-primitive) variables:</p></li>
+                            <ul>
+                                <li><p>Hold a reference to an object, not the actual object. </p></li>
+                                <li><p>A local variable that is a reference to an object goes on the Stack (the object it refers to still goes on the Heap). </p></li>
+                            </ul>
+                            <li><p>Where variables (primitive and non-primitive types) live: </p></li>
+                            <ul>
+                                <li><p><b>Local</b> variables (on the Stack) </p></li>
+                                <li><p><b>Instance</b> variables (on the Heap)</p></li>
+                            </ul>
+                        </ul>
+                        <h4>5.	Initialising Object State</h4>
+                        <ul>
+                            <li><p>Using a constructor to initialise object state(i.e. instance variables):</p></li>
+                            <ul style="margin-left:30px ;">
+                                <li><p>Most common use of constructors. </p></li>
+                                <li><p>Constructors: the best place to put initialisation code. </p></li>
+                                <li><p>Programmers should always write a “no arguments” constructor (to build an object with default values): makes things easier for the program’s users.</p></li>
+                            </ul>
+                        </ul>
+                        <h4>6.	Overloaded Constructors</h4>
+                        <ul>
+                            <li><p>When you have<b> more than one constructor</b> in a class. </p></li>
+                            <li><p>Must have <b>different argument</b> lists (it’s the variable type and order that matters); </p></li>
+                            <li><p>There may be cases where a no-arguments constructor makes no sense (e.g. making a Color object).</p></li>
+                        </ul>
+                        <h4>7.	Calling and Making Constructors</h4>
+                        <ul>
+                            <li><p>Calling a superclass constructor: </p></li>
+                            <ul style="margin-left:30px ;">
+                                <li><p>using super() calls the super constructor; </p></li>
+                                <li><p>using super() in your constructor puts the superclass on the top of the stack.</p></li>
+                            </ul>
+                            <li><p>Compiler and making constructors: </p></li>
+                            <p>if no constructor is provided, the compiler adds one that looks like: <i>
+                                public ClassName() {
+                                 super(); 
+                                } </i>
+                                </p>
+                                <p>if you provide a constructor but do not add a call to super(), the compiler puts such a call in each of your overloaded constructors.</p>
+                        </ul>
+                        <h4>8.	Using super()</h4>
+                        <ul>
+                            <li><p>The call to super() must be the first statement in a constructor.</p></li>
+                            <p>Just like: 
+                                public Dog() {
+                                 super(); }
+                                </p>
+                             <li><p>You can pass arguments into a call to super().</p></li>   
+                        </ul>
+                        <h4>9.	Life of Objects and Variables</h4>
+                        <ul>
+                            <li><p>Life of an object: depends only <b>on the life of reference variables referring to it. </b></p></li>
+                            <p>Object is alive(or dead) if its reference is alive(or dead).</p>
+                            <li><p>Variable lifetime:</p></li>
+                            <ul style="margin-left:30px ;">
+                                <li><p><b>same</b> for <b>primitive</b> and reference variables; </p></li>
+                                <li><p>different for local and instance variables.</p></li>
+                            </ul>
+                            <li><p>Life duration:</p></li>
+                            <ul style="margin-left:30px ;">
+                                <li><p><b>local variables</b>:live only within the method that declared it (also referred to as being in scope); </p></li>
+                                <li><p><b>instance variables</b>: live for as long as object they belong to lives.</p></li>    
+                            </ul>
+                            
+                        </ul>
+                        <h2 style="margin-top:30px ;" id="day3">Instance</h2>
+                        <h4>1.	Static</h4>
+                        <p>Normally <b>every instance of an object</b> has its own copy of all variables and methods defined in the class. </p>
+                        <p><i>Example: Rectangles r1and r2 have a copy of width, height, area(), draw(), etc.</i></p>
+                        <img src="images/w3_4.jpg">
+                        <p>If you declare something as static, it means that all objects have the same copy of that variable/method.</p>
+
+                        <h4>2.	Using static </h4>
+                        <ul>
+                            <li><p>Static methods can only reference static variables! •Use static when a single copy of the data will suffice. </p></li>
+                            <p>Example: Count the number of instances of rectangles.</p>
+                            <li><p>Static is like global variables but applies class wide. </p></li>
+                            <li><p>Static methods become available when the class is loaded(created), not when you make an instance of it.</p></li>
+                        </ul>
+
+                        <h4>3.	Math Class and Methods</h4>
+                        <ul>
+                            <li><p>Methods of class Math: almost like global methods! </p></li>
+                            <ul style="margin-left:30px ;">
+                                <li><p>Act on the argument but are not affected by an instance variable state.</p></li>
+                                <li><p>Example: intx = Math.min(56,12);</p></li>    
+                            </ul>
+                            <p>always does the same thing and doesn’t use instance variables. → Method’s behaviour doesn’t need to know about a given object. </p>
+                            <li><p>MathClass:</p></li>
+                            <ul style="margin-left:30px ;">
+                                <li><p>Doesn’t have instance variables. </p></li>
+                                <li><p>Can’t make an instance of class.</p></li>
+        
+                            </ul>
+                        </ul>
+                        <h4>4.	static and final Variables</h4>
+                        <ul>
+                            <li><p>What we already know:</p></li>
+                            <ul style="margin-left:30px ;">
+                                <li><p>All instances of the same class are one copy of a static variable.</p></li>
+                                <li><p>Initialisation of static variables happens before any object of the class is created.</p></li>
+                                <li><p>A non-initialised static variable will have the default value of that variable type. </p></li>
+                                <li><p>Variables that are static and final cannot be changed. </p></li>
+                            </ul>
+                            <li><p>Convention is to name static final variables in all caps. </p></li>
+                            <li><p>Initialisation of static final variables: –When the variable is declared. </p></li>
+                            <p>In a static initialiser: block of code that runs when a class is loaded, before any code can use the class.</p>
+                        </ul>
+                        <h4>5.	Wrapper Classes </h4>
+                            <ul>
+                                <li>Wrapping Classes: used when a variable of a primitive type needs to be treated as an object. </li>
+                                <p>Every primitive type has a wrapper class. </p>
+                                <p>Wrapper classes are part of java.langpackage → no need to import them.</p>
+                            </ul>
+                       
+                        <h4>6.	Autoboxing</h4>
+                        <ul>
+                            <li><p>Autoboxing: automatic wrapping conversion from primitive type to wrapper object is automatic!</p></li>
+                            <li><p>Before Java 5.0: Variables of primitive types and object reference variables were never treated interchangeably! </p></li>
+                            <li><p>Wrapping and unwrapping an int in ArrayList of primitive integers: before and after Java 5.0</p></li>
+                        </ul>
+
+                        <h4>7.	Recursion</h4>
+                        <ul>
+                            <li><p>In general, methods can call other methods! (*) </p></li>
+                            <li><p>Methods that call themselves, directly or indirectly, are known as recursive. </p></li>
+                            <li><p>A recursive method only knows how to solve the simplest case(s) of a problem. This is known as the base case(s)(aka stopping condition).</p></li>
+                            <li><p>The definition of many mathematical functions is done through the use of recursion! </p></li>
+                            <li><p>Classic problems best solved using recursion: 
+                                –calculation of factorialn! and of Fibonacci numbers; –resolution of Tower of Hanoi problem.
+                                </p></li>
+                        </ul>
+                        <h2 style="margin-top:30px ;" id="day4">Strings</h2>
+                        <h4>1.	Strings</h4>
+                        <ul>
+                            <li><p>Strings are not a basic type in Java –they are objects! </p></li>
+                            <p>But are so common that Java provides some language level support for strings. –As in C, string literals are delimited by double quote marks.</p>
+                            <p><i>Example: “Hello” is an acceptable string literal. </i></p>
+                            <li><p>To use strings, we can (but don’t have to!) input the java.lang package, by adding the statement import java.lang.String;</p></li>
+                            <p>The java.langpackage is part of the JDK Class Library and provides classes that are fundamental to the Java programming language’s design.</p>
+                            <p>The import keyword tells the compiler that the program uses external packages.</p>
+                        </ul>
+                        <h4>2.	Strings: Another Property</h4>
+                        <ul>
+                            <li><p><b>Strings are immutable(i.e. can’t be changed):</b> this is for security purposes and to minimise memory usage. –Example: Ten String objects are created (with values “0”, “01”, …, “0123456789”). At the end</p></li>
+                            <ul style="margin-left:30px;">
+                                <li><p>variable s refers to the String object with value “0123456789”</p></li>
+                                <li><p>there exist 10 Strings. </p></li>
+                                <p>String s = “0”; 
+                                    for (intx=1; x<10; x++) { s = s + x; } </p>
+                            </ul>
+                        </ul>
+                        <p><b>String Pool:</b> Area of memory where String literals are put by the JVM when created. –JVM doesn’t create a duplicate if there’s already a String in memory with the same value; it refers the reference variable to the existing entry.  </p>
+                        <p>–Garbage Collector doesn’t cleanup the String Pool!</p>
+
+                        <h4>3.	String Classes: String</h4>
+                        <ul>
+                            <li><p>Java overloads the +operator for string concatenations. </p></li>
+                            <p>Unlike C++, this is pretty much the only operator overloading in Java! </p>
+                            <li><p>As strings in Java are objects, methods can be invoked on them. </p></li>
+                            <li><p>String classes</p></li>
+                            <ul style="margin-left:30px;">
+                                <li><p>for constant strings →String;</p></li>
+                                <li><p>indexing of string elements: starts at 0and ends at length()-1.</p></li>
+                            </ul>
+                        </ul>
+
+                        <h4>4.	StringBuffer& StringBuilder Classes</h4>
+                        <ul>
+                            <li><p><b>Used for variable strings, whereas String class is used for constant strings. </b></p></li>
+                            <ul style="margin-left:30px;">
+                                <li><p>Usually, you leave it to the system to use the StringBuffer class. </p></li>
+                                <li><p>Example: If we write “Bugs” + “ Bunny”, Java will automatically call a StringBuffer class method to generate the string “Bugs Bunny”.</p></li>
+                            </ul>
+                            <li><p><b>Java uses Unicode(2 bytes per character) not very efficient.</b>Class StringBuffer makes it worse (always has to re-allocate space). To alleviate this, Java always allocates 16 more characters than needed. </p></li>
+                            <code>
+                                <ul class="list-unstyled">
+                                    <li>StringBuffers = new StringBuffer(); </li>
+                                    <li>StringBuffers = new StringBuffer(20); </li>
+                                    <li>StringBuffers = new StringBuffer("cat"); </li>
+                                </ul>
+                            </code>
+                            <li><p>Old Java uses StringBuffer</p></li>
+                            <p>from Java 5.0 onwards, String Builder is used (as it’s more efficient).</p>
+                        </ul>
+                        
+                        <h4>5.	Character Class</h4>
+                        <ul>
+                            <li><p>The Character class is a Wrapper class for a single character, and belongs to the java.langpackage. </p></li>
+                            <p>Some of its static methods: </p>
+                            <ul style="margin-left:30px;">
+                                <li><code>isLetter(char c) returns true if c is a letter; </code></li>
+                                <li><code>isDigit(char c) returns true if c is a digit;</code></li>
+                                <li><code>isUpperCase(char c) returns true if c is uppercase letter;</code></li>
+                                <li><code>isLowerCase(char c) returns true if c is lowercase letter;</code></li>
+                            </ul>
+                        </ul>
+
+                        <h4>6.	Scanner Class</h4>
+                        
+                        <p>Delimiters are single characters in the StringTokenizerclass; </p>
+                        <p>however, the Scanner class(of java.util package) allows a word to be specified as a delimiter.</p>
+
+                        
+                        <h4>7.	Formatting</h4>
+                        <ul>
+                            <li><p>Formatting of numbers and dates in Java: not necessarily linked to I/O. –GUI is often used to display values to a user. </p></li>
+                            <li><p>Formatting before and after Java 5.0:</p></li>
+                            <ul style="margin-left:30px;">
+                                <li><p><b>Before</b> using classes in java.textpackage</p></li>
+                                <li><p><b>After</b> can use Formatter class of java.util package</p></li>
+                                </ul>
+                            <li><p>there are useful methods in I/O (like printf()) and String classes; </p></li>
+                            <li><p>simply call the static String.format() method. </p></li>
+                            <li><p><b>Steps</b> required to format information: </p></li>
+                            <ul style="margin-left:30px;">
+                                <li><p>Formatting instructions</p></li>
+                                <li><p>Argument(s) to be formatted → what</p></li>
+                                </ul>
+                        </ul>
+
+                        <h2 style="margin-top:30px ;" id="day5">GUI in Java (Basic Concepts)</h2>
+                        <h4>1.	What is GUI</h4>
+                        <p><b>GUI:</b> Method for interacting with a computer via the manipulation of text, images and “widgets”. </p>
+
+                        <ul>
+                            <li><p>GUIs display visual elements, e.g. buttons, icons, windows. </p></li>
+                            <li><p>Examples of operating systems that support GUIs: MAC OS, Microsoft Windows. </p></li>
+                        </ul>
+                        <p><b>Widgets:</b> Things you can put in a window, such as a button.</p>
+
+                        <h4>2.	What is (in a) GUI?</h4>
+                        <ul>
+                            <li><p>There are <b>3 main concepts</b> when doing GUI programming in Java:</p></li>
+                            <ul style="margin-left:30px;">
+                                <li><p><b>Component:</b> An object that the user can see on the screen and can also interact with. </p></li>
+                                <li><p><b>Container:</b> A component that can hold other components.</p></li>
+                                <li><p><b>Event:</b> An action triggered by the user (e.g. pressing a key, click a mouse button). </p></li>
+                            </ul>
+                            <li><p>Designing a GUI involves creating components, putting them into containers, and arranging for the program to respond to events(e.g. responding to mouse clicks).</p></li>
+                        </ul>
+                        <img src="images/w3_5.jpg" style="width: 75%; height: 75%;">
+                        <h4>3.	Background:java.awt Package</h4>
+                        <ul>
+                            <li><p>The java.awt package contains most of the classes needed to create GUI applications and Applets in Java. </p></li>
+                            <li><p>There are over 40 classes in the AWT package. They fall into the following general class types: </p></li>
+                            <ul style="margin-left:30px;">
+                                <li><p><b>Container Classes:</b> Graphical widgets capable of containing collections of other graphical widgets (i.e. Panel, Window, Dialog and Frame). </p></li>
+                                <li><p><b>Component Classes:</b> Atomic graphical widgets like Button, Menu and List. </p></li>
+                                <li><p><b>Layout Manager Classes:</b> Control the layout of component objects on/in container objects.</p></li>
+                            </ul>
+                            <li><p>More general class types in java.awt package: </p></li>
+                            <ul style="margin-left:30px;">
+                                <li><p><b>Primitive Graphics Classes:</b> Control and access primitive graphics like Point, Rectangle and Polygon.</p></li>
+                                <li><p><b>Event Handling Classes:</b> Deal with events received from the GUI and other system items. </p></li>
+                                <li><p><b>Listener Classes:</b> Receive events from graphical components and act on them</p></li>
+                            </ul>
+                        </ul>
+
+                        <h4>4.	Containers versus Components</h4>
+                        <ul>
+                            <li><p>Containers: objects capable of containing other Component objects. </p></li>
+                            <li><p>Components: single entities with no containment abilities.</p></li>
+                        </ul>
+                        <p><b>java.awt.Frame：</b></p>
+                        <ul>
+                            <li><p>A Frame is a simple, resizeable window with a border, title bar and possibly a menu bar.</p></li>
+                            <li><p>You can extend Frame in your program (more common), or instantiate the Frame class in your own class (less common) to build a basic GUI. </p></li>
+                            
+                        </ul>
+                        <p><b>Components:</b></p>
+                        <p>Basic Swing Components: Used mainly for getting input from the user.</p>
+                        <img src="images/w3_6.jpg" style="width: 75%; height: 75%;">
+
+                        <h4>5.	Events, Sources & Listeners</h4>
+                        <ul>
+                            <li><p>Listener Interface: the bridge between the listener (the user) and the event source (e.g. the button). </p></li>
+                            <p>Implementing a listener interface gives the button a way to call the user back. </p>
+                            <li><p>Event source: object that can turn user actions (e.g. click a mouse, close a window) into events.</p></li>
+                            <li><p>Every event type has a matching listener interface. </p></li>
+                        </ul>
+
+
+
+
+                        
+                    <div style="height: 30px;"></div>
+                    
+                        
+
+
+
+
+                        
+               
+                <div class="comment-sec-w3layouts">
+                    <h4 class="leave-w3layouts mb-5">0 Comment</h4>
+                    
+                </div>
+                <div class="comment-bottom lavi_mail_grid_right p-0 my-lg-5 my-4">
+                    <h4 class="leave-w3layouts mb-5">Post a Comment</h4>
+                    <form action="#" class="w3layouts-contact-fm" method="post">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label>First Name</label>
+                                    <input class="form-control" type="text" name="Name" placeholder="" required="">
+                                </div>
+                                <div class="form-group">
+                                    <label>Last Name</label>
+                                    <input class="form-control" type="text" name="Name" placeholder="" required="">
+                                </div>
+                                <div class="form-group">
+                                    <label>Email</label>
+                                    <input class="form-control" type="email" name="Email" placeholder="" required="">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label>Write Message</label>
+                                    <textarea class="form-control" name="Message" placeholder="" required=""></textarea>
+                                </div>
+
+
+
+                            </div>
+                            <div class="form-group mx-auto mt-3">
+                                <button type="submit" class="btn submit">Submit Comment</button>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- //banner-botttom -->
+
+    <!-- footer -->
+    <footer class="footer-content py-5">
+        <div class="container py-md-3">
+            <div class="footer-top text-center mb-5">
+                <h2>
+                    <a class="navbar-brand pt-3 mb-5" href="index.html">
+                        <span class="fa fa-angellist"></span> java nestling
+                    </a>
+                </h2>
+                <div class="contact-form mx-auto text-left">
+                    <form method="post" action="#">
+                        <div class="row subscribe-sec">
+                            <div class="col-md-9 con-gd">
+                                <input type="email" class="form-control" id="email" placeholder="Your Email here..." name="email" required>
+
+                            </div>
+                            <div class="col-md-3 con-gd">
+                                <button type="submit" class="btn btn-default">Subscribe</button>
+                            </div>
+
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+            <div class="row footer-top-inner-w3layouts">
+                <div class="col-lg-3 col-md-6 mt-lg-0 mt-4">
+                    <div class="footer-lavi">
+                        <h3 class="mb-3 lavi_title">Links</h3>
+                        <hr>
+                        <ul class="list-info-lavi">
+                            <li>
+                                <a href="about.html"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                                    Our Mission
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                                    Latest Posts
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                                    Explore
+                                </a>
+                            </li>
+                            <li>
+                                <a href="contact.html"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                                    Find us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                                    Privacy Policy
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-lg-0 mt-4">
+                    <div class="footer-lavi">
+                        <h3 class="mb-3 lavi_title">Navigation</h3>
+                        <hr>
+                        <ul class="list-info-lavi">
+                            <li>
+                                <a href="index.html"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="about.html"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                                    About Us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="single.html"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                                    Single Page
+                                </a>
+                            </li>
+                            <li>
+                                <a href="about.html"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                                    Team
+                                </a>
+                            </li>
+                            <li>
+                                <a href="contact.html"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                                    Contact Us
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-lg-0 mt-4">
+                    <div class="footer-lavi">
+                        <h3 class="mb-3 lavi_title">Customer Care</h3>
+                        <hr>
+                        <ul class="list-info-lavi">
+                            <li>
+                                <a href="about.html"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                                    Our Mission
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                                    Latest Posts
+                                </a>
+                            </li>
+                            <li> <a href="#"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+
+                                    Explore
+                                </a>
+                            </li>
+                            <li>
+                                <a href="contact.html"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                                    Find us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                                    Privacy Policy
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-lg-0 mt-4">
+                    <div class="footer-lavi">
+                        <h3 class="mb-3 lavi_title">Contact Us</h3>
+                        <hr>
+                        <div class="last-w3layouts-contact">
+                            <p>
+                                <a href="mailto:example@email.com">2017212790@bupt.edu.cn</a>
+                            </p>
+                        </div>
+                        <div class="last-w3layouts-contact my-2">
+                            <p>+ 456 123 7890</p>
+                        </div>
+                        <div class="last-w3layouts-contact">
+                            <p>Beijing University of Posts and Telecommunications, Haidian District, Beijing</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- //footer bottom -->
+    </footer>
+    <!-- //footer -->
+    <div class="copy-right">
+        <div class="container">
+            <div class="row">
+                <p class="copy-right-grids text-md-left text-center my-sm-4 my-4 col-md-6">Copyright &copy; 2020.Group777 All rights reserved.</p>
+                <div class="w3layouts-footer text-md-right text-center mt-4 col-md-5">
+                    <ul class="list-unstyled w3layouts-icons">
+                        <li>
+                            <a href="#">
+                                <span class="fa fa-facebook-f"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa fa-twitter"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa fa-dribbble"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa fa-vk"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="move-top text-right col-md-1"><a href="#home" class="move-top"> <span class="fa fa-angle-up  mb-3" aria-hidden="true"></span></a></div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
